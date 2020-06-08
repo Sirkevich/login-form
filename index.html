@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Личный кабинет пользователя</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="form-box">
+        <form class="login-form" method="post" action="https://fom.in.ua/echo">
+            <h1 class="login-form__title">
+                личный кабинет
+            </h1>
+            <p class="login-form__text">
+                введите пожалуйста свой логин и пароль
+            </p>
+             <div class="login-box">
+                <input  type="text" class="input" name="log" id="login" placeholder="Логин" required> 
+            </div>
+            <div class="password-box">    
+                <input  type="text" class="input" name="pass" id="password" placeholder="Пароль" required>    
+            </div>
+            <div class="link-box">
+                <a class="reсovery-link" href="#">
+                    я забыл пароль!
+                </a>
+            </div>    
+            <div class="button-box">
+                <button class="submit-button"> 
+                    войти
+                </button>
+            </div>
+        </form>
+        <button class="close-button"></button>
+    </div>  
+</body>
+</html>
