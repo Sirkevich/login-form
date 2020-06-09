@@ -6,9 +6,9 @@ body {
     height: 5000px;
     background: #222;
     background-image: url(./img/wallpaper.jpg);
-    background-repeat: no-repeat;
+   background-repeat: no-repeat;
     background-position:center;
-    background-size: cover;
+    background-size: cover; 
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 14px;
     line-height: 24px;
@@ -16,7 +16,9 @@ body {
 
 .form-box {
     width: 460px;
-    background-color: #fff;
+    background:url(img/bg-form.png);
+    background-size: cover;
+    background-attachment: fixed;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -24,11 +26,10 @@ body {
     padding-top: 50px;
     padding-right: 80px;
     padding-bottom: 58px;
-    padding-left: 80px;
+    padding-left: 80px; 
 }
 
 .login-form__title {
-    width: 100%;
     margin-top: 0px;
     margin-bottom: 18px;
     color: #000;
@@ -44,38 +45,34 @@ body {
     margin-bottom: 16px;
 }
 
+.input-box {
+    margin-bottom: 18px;
+}
+
 .login-box {
-    position: relative;
     margin-bottom: 9px;
-    height: 43px;
-    width: 100%;
 }
 
 .login-box::before {
-    content:"";
-    position: absolute;
     background:url(./img/user-img.png) no-repeat;
-    height: 13px;
-    width: 13px;
-    bottom:15px;
-    right: 15px;
-}
-
-.password-box {
-    position: relative;
-    margin-bottom: 18px;
-    height: 43px;
-    width: 100%;
 }
 
 .password-box::before {
+    background:url(./img/lock-img.png) no-repeat;
+}
+
+.form-input {
+    position: relative;
+    width: 100%;
+}
+
+.icon::before {
     content:"";
     position: absolute;
-    background:url(./img/lock-img.png) no-repeat;
     height: 15px;
     width: 13px;
     bottom:15px;
-    right: 15px;   
+    right: 15px;
 }
 
 .input {
@@ -129,7 +126,6 @@ input::placeholder {
     position: fixed;
     top: 9px;
     right: -33px; 
-    transform: translate(25,25);
     width: 19px;
     height: 19px;
     background: url(./img/close-btn.png) no-repeat;
